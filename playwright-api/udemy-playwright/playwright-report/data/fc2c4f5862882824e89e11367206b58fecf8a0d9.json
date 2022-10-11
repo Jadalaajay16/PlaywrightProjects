@@ -1,0 +1,899 @@
+{
+  "fileId": "fc2c4f5862882824e89e11367206b58fecf8a0d9",
+  "fileName": "tests/e2e/e2e-login.spec.ts",
+  "tests": [
+    {
+      "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-b1fe1faf28f5f86b0c296d680a9b0399be1612e4",
+      "title": "Negative Scenario for login",
+      "projectName": "Chromium",
+      "location": {
+        "file": "tests/e2e/e2e-login.spec.ts",
+        "line": 18,
+        "column": 3
+      },
+      "duration": 12147,
+      "outcome": "expected",
+      "path": [
+        "tests/e2e/e2e-login.spec.ts:18",
+        "Login / Logout Flow"
+      ],
+      "results": [
+        {
+          "duration": 12147,
+          "startTime": "2022-10-07T15:48:36.583Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2022-10-07T15:48:36.584Z",
+              "duration": 7151,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2022-10-07T15:48:39.303Z",
+                  "duration": 2156,
+                  "steps": []
+                },
+                {
+                  "title": "page.goto(http://zero.webappsecurity.com/)",
+                  "startTime": "2022-10-07T15:48:41.466Z",
+                  "duration": 2269,
+                  "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m visit() {\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m   }\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "page-objects/HomePage.ts",
+                    "line": 17,
+                    "column": 21
+                  }
+                }
+              ]
+            },
+            {
+              "title": "locator.click(#signin_button)",
+              "startTime": "2022-10-07T15:48:43.737Z",
+              "duration": 439,
+              "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m clickOnSignIn() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignInButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/HomePage.ts",
+                "line": 21,
+                "column": 29
+              }
+            },
+            {
+              "title": "locator.type(#user_login, invalid username)",
+              "startTime": "2022-10-07T15:48:44.181Z",
+              "duration": 177,
+              "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 26,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.type(#user_password, invalid password)",
+              "startTime": "2022-10-07T15:48:44.360Z",
+              "duration": 155,
+              "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 27,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.click(text=Sign in)",
+              "startTime": "2022-10-07T15:48:44.517Z",
+              "duration": 678,
+              "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 28,
+                "column": 29
+              }
+            },
+            {
+              "title": "page.waitForTimeout",
+              "startTime": "2022-10-07T15:48:45.200Z",
+              "duration": 3034,
+              "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36masync\u001b[39m wait(time) {\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(time)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/AbstractPage.ts",
+                "line": 11,
+                "column": 21
+              }
+            },
+            {
+              "title": "expect.toContainText",
+              "startTime": "2022-10-07T15:48:48.237Z",
+              "duration": 27,
+              "snippet": "\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36masync\u001b[39m assertErrorMessage() {\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mtoContainText(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[32m'Login and/or password are wrong'\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 32,
+                "column": 37
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2022-10-07T15:48:48.264Z",
+              "duration": 465,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2022-10-07T15:48:48.687Z",
+                  "duration": 30,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": [
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/b5711e82d50233b64e30935df4e16924d5a9412e.zip"
+            }
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-caad647b7f0901086ce2f72692d5ad580a0ee953",
+      "title": "Positive Scenario for login + logout",
+      "projectName": "Chromium",
+      "location": {
+        "file": "tests/e2e/e2e-login.spec.ts",
+        "line": 26,
+        "column": 3
+      },
+      "duration": 13856,
+      "outcome": "expected",
+      "path": [
+        "tests/e2e/e2e-login.spec.ts:26",
+        "Login / Logout Flow"
+      ],
+      "results": [
+        {
+          "duration": 13856,
+          "startTime": "2022-10-07T15:48:37.563Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2022-10-07T15:48:37.564Z",
+              "duration": 8591,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2022-10-07T15:48:41.406Z",
+                  "duration": 2144,
+                  "steps": []
+                },
+                {
+                  "title": "page.goto(http://zero.webappsecurity.com/)",
+                  "startTime": "2022-10-07T15:48:43.557Z",
+                  "duration": 2597,
+                  "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m visit() {\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m   }\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "page-objects/HomePage.ts",
+                    "line": 17,
+                    "column": 21
+                  }
+                }
+              ]
+            },
+            {
+              "title": "locator.click(#signin_button)",
+              "startTime": "2022-10-07T15:48:46.159Z",
+              "duration": 412,
+              "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m clickOnSignIn() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignInButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/HomePage.ts",
+                "line": 21,
+                "column": 29
+              }
+            },
+            {
+              "title": "locator.type(#user_login, username)",
+              "startTime": "2022-10-07T15:48:46.577Z",
+              "duration": 112,
+              "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 26,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.type(#user_password, password)",
+              "startTime": "2022-10-07T15:48:46.690Z",
+              "duration": 110,
+              "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 27,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.click(text=Sign in)",
+              "startTime": "2022-10-07T15:48:46.801Z",
+              "duration": 2491,
+              "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 28,
+                "column": 29
+              }
+            },
+            {
+              "title": "expect.toBeVisible",
+              "startTime": "2022-10-07T15:48:49.296Z",
+              "duration": 91,
+              "snippet": "\u001b[0m \u001b[90m 30 |\u001b[39m     \u001b[36mconst\u001b[39m accountSummaryTab \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#account_summary_tab'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m expect(accountSummaryTab)\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/e2e/e2e-login.spec.ts",
+                "line": 31,
+                "column": 37
+              }
+            },
+            {
+              "title": "page.goto(http://zero.webappsecurity.com/logout.html)",
+              "startTime": "2022-10-07T15:48:49.388Z",
+              "duration": 740,
+              "snippet": "\u001b[0m \u001b[90m 32 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/logout.html'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m               ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'http://zero.webappsecurity.com/index.html'\u001b[39m)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/e2e/e2e-login.spec.ts",
+                "line": 33,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2022-10-07T15:48:50.129Z",
+              "duration": 36,
+              "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/logout.html'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'http://zero.webappsecurity.com/index.html'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                       ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m   })\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/e2e/e2e-login.spec.ts",
+                "line": 34,
+                "column": 24
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2022-10-07T15:48:50.166Z",
+              "duration": 1253,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2022-10-07T15:48:51.301Z",
+                  "duration": 112,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": [
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/1b9d1d07151d403248549392287cb3c4e2d0d61b.zip"
+            }
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-50ced041d0650e88e26515e0847344a57fad21e3",
+      "title": "Negative Scenario for login",
+      "projectName": "Firefox",
+      "location": {
+        "file": "tests/e2e/e2e-login.spec.ts",
+        "line": 18,
+        "column": 3
+      },
+      "duration": 18960,
+      "outcome": "expected",
+      "path": [
+        "tests/e2e/e2e-login.spec.ts:18",
+        "Login / Logout Flow"
+      ],
+      "results": [
+        {
+          "duration": 18960,
+          "startTime": "2022-10-07T15:48:55.572Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2022-10-07T15:48:55.573Z",
+              "duration": 12117,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2022-10-07T15:49:02.433Z",
+                  "duration": 2471,
+                  "steps": []
+                },
+                {
+                  "title": "page.goto(http://zero.webappsecurity.com/)",
+                  "startTime": "2022-10-07T15:49:04.912Z",
+                  "duration": 2778,
+                  "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m visit() {\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m   }\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "page-objects/HomePage.ts",
+                    "line": 17,
+                    "column": 21
+                  }
+                }
+              ]
+            },
+            {
+              "title": "locator.click(#signin_button)",
+              "startTime": "2022-10-07T15:49:07.694Z",
+              "duration": 552,
+              "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m clickOnSignIn() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignInButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/HomePage.ts",
+                "line": 21,
+                "column": 29
+              }
+            },
+            {
+              "title": "locator.type(#user_login, invalid username)",
+              "startTime": "2022-10-07T15:49:08.252Z",
+              "duration": 391,
+              "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 26,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.type(#user_password, invalid password)",
+              "startTime": "2022-10-07T15:49:08.644Z",
+              "duration": 139,
+              "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 27,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.click(text=Sign in)",
+              "startTime": "2022-10-07T15:49:08.785Z",
+              "duration": 716,
+              "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 28,
+                "column": 29
+              }
+            },
+            {
+              "title": "page.waitForTimeout",
+              "startTime": "2022-10-07T15:49:09.506Z",
+              "duration": 3044,
+              "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36masync\u001b[39m wait(time) {\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(time)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/AbstractPage.ts",
+                "line": 11,
+                "column": 21
+              }
+            },
+            {
+              "title": "expect.toContainText",
+              "startTime": "2022-10-07T15:49:12.555Z",
+              "duration": 68,
+              "snippet": "\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36masync\u001b[39m assertErrorMessage() {\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mtoContainText(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[32m'Login and/or password are wrong'\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 32,
+                "column": 37
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2022-10-07T15:49:12.624Z",
+              "duration": 1908,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2022-10-07T15:49:13.315Z",
+                  "duration": 1211,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": [
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/4d2e7d8b4f0a8dfec4839ece3eedc94d7958aee3.zip"
+            }
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-bc0e31e0aabf1fb737197f7e24998e09b6d47ba9",
+      "title": "Positive Scenario for login + logout",
+      "projectName": "Firefox",
+      "location": {
+        "file": "tests/e2e/e2e-login.spec.ts",
+        "line": 26,
+        "column": 3
+      },
+      "duration": 22386,
+      "outcome": "unexpected",
+      "path": [
+        "tests/e2e/e2e-login.spec.ts:26",
+        "Login / Logout Flow"
+      ],
+      "results": [
+        {
+          "duration": 22386,
+          "startTime": "2022-10-07T15:48:58.568Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2022-10-07T15:48:58.569Z",
+              "duration": 11810,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2022-10-07T15:49:04.988Z",
+                  "duration": 2454,
+                  "steps": []
+                },
+                {
+                  "title": "page.goto(http://zero.webappsecurity.com/)",
+                  "startTime": "2022-10-07T15:49:07.451Z",
+                  "duration": 2928,
+                  "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m visit() {\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m   }\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "page-objects/HomePage.ts",
+                    "line": 17,
+                    "column": 21
+                  }
+                }
+              ]
+            },
+            {
+              "title": "locator.click(#signin_button)",
+              "startTime": "2022-10-07T15:49:10.382Z",
+              "duration": 514,
+              "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m clickOnSignIn() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignInButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/HomePage.ts",
+                "line": 21,
+                "column": 29
+              }
+            },
+            {
+              "title": "locator.type(#user_login, username)",
+              "startTime": "2022-10-07T15:49:10.902Z",
+              "duration": 234,
+              "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 26,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.type(#user_password, password)",
+              "startTime": "2022-10-07T15:49:11.138Z",
+              "duration": 80,
+              "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 27,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.click(text=Sign in)",
+              "startTime": "2022-10-07T15:49:11.219Z",
+              "duration": 1086,
+              "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 28,
+                "column": 29
+              }
+            },
+            {
+              "title": "expect.toBeVisible",
+              "startTime": "2022-10-07T15:49:12.310Z",
+              "duration": 5062,
+              "snippet": "\u001b[0m \u001b[90m 30 |\u001b[39m     \u001b[36mconst\u001b[39m accountSummaryTab \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#account_summary_tab'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m expect(accountSummaryTab)\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/e2e/e2e-login.spec.ts",
+                "line": 31,
+                "column": 37
+              },
+              "error": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nCall log:\n  - \u001b[2mwaiting for selector \"#account_summary_tab\"\u001b[22m\n"
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2022-10-07T15:49:17.373Z",
+              "duration": 3580,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2022-10-07T15:49:18.217Z",
+                  "duration": 2573,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nCall log:\n  - \u001b[2mwaiting for selector \"#account_summary_tab\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 29 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m     \u001b[36mconst\u001b[39m accountSummaryTab \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#account_summary_tab'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m expect(accountSummaryTab)\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/logout.html'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'http://zero.webappsecurity.com/index.html'\u001b[39m)\u001b[0m\n\n\u001b[2m    at C:\\Users\\USER\\Desktop\\Python automation selenium\\Playwright\\playwright-api\\udemy-playwright\\tests\\e2e\\e2e-login.spec.ts:31:37\u001b[22m\n\u001b[2m    at WorkerRunner._runTestWithBeforeHooks (C:\\Users\\USER\\Desktop\\Python automation selenium\\Playwright\\playwright-api\\udemy-playwright\\node_modules\\@playwright\\test\\lib\\workerRunner.js:478:7)\u001b[22m",
+          "status": "failed",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/0927d892d1544eaf823deeec29563fc6a202c8cc.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/393316ecbd9f8457bd1c5f07340ef326cf5e0e39.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "data/029c9ee84fc78150bcb91c64f0c53cf1f5be0628.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    },
+    {
+      "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-b309dbdfe39b0779b807272dad85661d27b15311",
+      "title": "Negative Scenario for login",
+      "projectName": "Webkit",
+      "location": {
+        "file": "tests/e2e/e2e-login.spec.ts",
+        "line": 18,
+        "column": 3
+      },
+      "duration": 12795,
+      "outcome": "expected",
+      "path": [
+        "tests/e2e/e2e-login.spec.ts:18",
+        "Login / Logout Flow"
+      ],
+      "results": [
+        {
+          "duration": 12795,
+          "startTime": "2022-10-07T15:49:23.647Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2022-10-07T15:49:23.648Z",
+              "duration": 6914,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2022-10-07T15:49:26.700Z",
+                  "duration": 1231,
+                  "steps": []
+                },
+                {
+                  "title": "page.goto(http://zero.webappsecurity.com/)",
+                  "startTime": "2022-10-07T15:49:27.937Z",
+                  "duration": 2624,
+                  "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m visit() {\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m   }\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "page-objects/HomePage.ts",
+                    "line": 17,
+                    "column": 21
+                  }
+                }
+              ]
+            },
+            {
+              "title": "locator.click(#signin_button)",
+              "startTime": "2022-10-07T15:49:30.563Z",
+              "duration": 587,
+              "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m clickOnSignIn() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignInButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/HomePage.ts",
+                "line": 21,
+                "column": 29
+              }
+            },
+            {
+              "title": "locator.type(#user_login, invalid username)",
+              "startTime": "2022-10-07T15:49:31.159Z",
+              "duration": 519,
+              "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 26,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.type(#user_password, invalid password)",
+              "startTime": "2022-10-07T15:49:31.679Z",
+              "duration": 361,
+              "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 27,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.click(text=Sign in)",
+              "startTime": "2022-10-07T15:49:32.041Z",
+              "duration": 980,
+              "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 28,
+                "column": 29
+              }
+            },
+            {
+              "title": "page.waitForTimeout",
+              "startTime": "2022-10-07T15:49:33.026Z",
+              "duration": 3080,
+              "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36masync\u001b[39m wait(time) {\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(time)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/AbstractPage.ts",
+                "line": 11,
+                "column": 21
+              }
+            },
+            {
+              "title": "expect.toContainText",
+              "startTime": "2022-10-07T15:49:36.112Z",
+              "duration": 87,
+              "snippet": "\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36masync\u001b[39m assertErrorMessage() {\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorMessage)\u001b[33m.\u001b[39mtoContainText(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[32m'Login and/or password are wrong'\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 32,
+                "column": 37
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2022-10-07T15:49:36.199Z",
+              "duration": 243,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2022-10-07T15:49:36.418Z",
+                  "duration": 17,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": [
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/f2573ecb32b7ff3691877cbb366383fb46b43e86.zip"
+            }
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-80badd0e690b608f41ddb0f9f7aa5456585c9cbf",
+      "title": "Positive Scenario for login + logout",
+      "projectName": "Webkit",
+      "location": {
+        "file": "tests/e2e/e2e-login.spec.ts",
+        "line": 26,
+        "column": 3
+      },
+      "duration": 11517,
+      "outcome": "expected",
+      "path": [
+        "tests/e2e/e2e-login.spec.ts:26",
+        "Login / Logout Flow"
+      ],
+      "results": [
+        {
+          "duration": 11517,
+          "startTime": "2022-10-07T15:49:28.211Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2022-10-07T15:49:28.211Z",
+              "duration": 6540,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2022-10-07T15:49:30.854Z",
+                  "duration": 1325,
+                  "steps": []
+                },
+                {
+                  "title": "page.goto(http://zero.webappsecurity.com/)",
+                  "startTime": "2022-10-07T15:49:32.185Z",
+                  "duration": 2566,
+                  "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m visit() {\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m   }\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "page-objects/HomePage.ts",
+                    "line": 17,
+                    "column": 21
+                  }
+                }
+              ]
+            },
+            {
+              "title": "locator.click(#signin_button)",
+              "startTime": "2022-10-07T15:49:34.753Z",
+              "duration": 602,
+              "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m clickOnSignIn() {\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignInButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/HomePage.ts",
+                "line": 21,
+                "column": 29
+              }
+            },
+            {
+              "title": "locator.type(#user_login, username)",
+              "startTime": "2022-10-07T15:49:35.358Z",
+              "duration": 421,
+              "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 26,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.type(#user_password, password)",
+              "startTime": "2022-10-07T15:49:35.781Z",
+              "duration": 315,
+              "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mtype(username)\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 27,
+                "column": 30
+              }
+            },
+            {
+              "title": "locator.click(text=Sign in)",
+              "startTime": "2022-10-07T15:49:36.098Z",
+              "duration": 2278,
+              "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mtype(password)\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   }\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "page-objects/LoginPage.ts",
+                "line": 28,
+                "column": 29
+              }
+            },
+            {
+              "title": "expect.toBeVisible",
+              "startTime": "2022-10-07T15:49:38.387Z",
+              "duration": 244,
+              "snippet": "\u001b[0m \u001b[90m 30 |\u001b[39m     \u001b[36mconst\u001b[39m accountSummaryTab \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#account_summary_tab'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m expect(accountSummaryTab)\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/e2e/e2e-login.spec.ts",
+                "line": 31,
+                "column": 37
+              }
+            },
+            {
+              "title": "page.goto(http://zero.webappsecurity.com/logout.html)",
+              "startTime": "2022-10-07T15:49:38.632Z",
+              "duration": 641,
+              "snippet": "\u001b[0m \u001b[90m 32 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/logout.html'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m               ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'http://zero.webappsecurity.com/index.html'\u001b[39m)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/e2e/e2e-login.spec.ts",
+                "line": 33,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2022-10-07T15:49:39.274Z",
+              "duration": 32,
+              "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://zero.webappsecurity.com/logout.html'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'http://zero.webappsecurity.com/index.html'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                       ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m   })\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/e2e/e2e-login.spec.ts",
+                "line": 34,
+                "column": 24
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2022-10-07T15:49:39.306Z",
+              "duration": 421,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2022-10-07T15:49:39.699Z",
+                  "duration": 20,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": [
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/9d18c866bc3767dfad1afa48c6b350dad33a944d.zip"
+            }
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "fileId": "b0c26898c558ac0afcc9ad02f48f2252236aac2a",
+  "fileName": "tests/example.spec.ts",
+  "tests": [
+    {
+      "testId": "b0c26898c558ac0afcc9ad02f48f2252236aac2a-8dd505331dfb1ea4030420e7d7f660587461205b",
+      "title": "Simple basic test",
+      "projectName": "Chromium",
+      "location": {
+        "file": "tests/example.spec.ts",
+        "line": 3,
+        "column": 6
+      },
+      "duration": 1501,
+      "outcome": "expected",
+      "path": [
+        "tests/example.spec.ts:3"
+      ],
+      "results": [
+        {
+          "duration": 1501,
+          "startTime": "2021-11-26T11:08:44.515Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-11-26T11:08:44.516Z",
+              "duration": 803,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-11-26T11:08:44.844Z",
+                  "duration": 475,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(https://www.example.com)",
+              "startTime": "2021-11-26T11:08:45.320Z",
+              "duration": 651,
+              "snippet": "\u001b[0m \u001b[90m  3 |\u001b[39m test\u001b[33m.\u001b[39monly(\u001b[32m'Simple basic test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m  4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.example.com'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mconst\u001b[39m pageTitle \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1'\u001b[39m)\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/example.spec.ts",
+                "line": 4,
+                "column": 14
+              }
+            },
+            {
+              "title": "expect.toContainText",
+              "startTime": "2021-11-26T11:08:45.973Z",
+              "duration": 38,
+              "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mconst\u001b[39m pageTitle \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(pageTitle)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Example Domain'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                          ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  7 |\u001b[39m })\u001b[0m",
+              "steps": [],
+              "location": {
+                "file": "tests/example.spec.ts",
+                "line": 6,
+                "column": 27
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-11-26T11:08:46.012Z",
+              "duration": 4,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-11-26T11:08:46.012Z",
+                  "duration": 4,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "fileId": "b0c26898c558ac0afcc9ad02f48f2252236aac2a",
+      "fileName": "tests/example.spec.ts",
+      "tests": [
+        {
+          "testId": "b0c26898c558ac0afcc9ad02f48f2252236aac2a-8dd505331dfb1ea4030420e7d7f660587461205b",
+          "title": "Simple basic test",
+          "projectName": "Chromium",
+          "location": {
+            "file": "tests/example.spec.ts",
+            "line": 3,
+            "column": 6
+          },
+          "duration": 1501,
+          "outcome": "expected",
+          "path": [
+            "tests/example.spec.ts:3"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 1501
+      }
+    }
+  ],
+  "projectNames": [
+    "Chromium"
+  ],
+  "stats": {
+    "total": 1,
+    "expected": 1,
+    "unexpected": 0,
+    "flaky": 0,
+    "skipped": 0,
+    "ok": true,
+    "duration": 1501
+  }
+}

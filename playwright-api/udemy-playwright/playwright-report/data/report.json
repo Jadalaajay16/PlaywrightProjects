@@ -1,0 +1,369 @@
+{
+  "files": [
+    {
+      "fileId": "fc2c4f5862882824e89e11367206b58fecf8a0d9",
+      "fileName": "tests/e2e/e2e-login.spec.ts",
+      "tests": [
+        {
+          "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-bc0e31e0aabf1fb737197f7e24998e09b6d47ba9",
+          "title": "Positive Scenario for login + logout",
+          "projectName": "Firefox",
+          "location": {
+            "file": "tests/e2e/e2e-login.spec.ts",
+            "line": 26,
+            "column": 3
+          },
+          "duration": 22386,
+          "outcome": "unexpected",
+          "path": [
+            "tests/e2e/e2e-login.spec.ts:26",
+            "Login / Logout Flow"
+          ],
+          "ok": false
+        },
+        {
+          "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-b1fe1faf28f5f86b0c296d680a9b0399be1612e4",
+          "title": "Negative Scenario for login",
+          "projectName": "Chromium",
+          "location": {
+            "file": "tests/e2e/e2e-login.spec.ts",
+            "line": 18,
+            "column": 3
+          },
+          "duration": 12147,
+          "outcome": "expected",
+          "path": [
+            "tests/e2e/e2e-login.spec.ts:18",
+            "Login / Logout Flow"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-50ced041d0650e88e26515e0847344a57fad21e3",
+          "title": "Negative Scenario for login",
+          "projectName": "Firefox",
+          "location": {
+            "file": "tests/e2e/e2e-login.spec.ts",
+            "line": 18,
+            "column": 3
+          },
+          "duration": 18960,
+          "outcome": "expected",
+          "path": [
+            "tests/e2e/e2e-login.spec.ts:18",
+            "Login / Logout Flow"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-b309dbdfe39b0779b807272dad85661d27b15311",
+          "title": "Negative Scenario for login",
+          "projectName": "Webkit",
+          "location": {
+            "file": "tests/e2e/e2e-login.spec.ts",
+            "line": 18,
+            "column": 3
+          },
+          "duration": 12795,
+          "outcome": "expected",
+          "path": [
+            "tests/e2e/e2e-login.spec.ts:18",
+            "Login / Logout Flow"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-caad647b7f0901086ce2f72692d5ad580a0ee953",
+          "title": "Positive Scenario for login + logout",
+          "projectName": "Chromium",
+          "location": {
+            "file": "tests/e2e/e2e-login.spec.ts",
+            "line": 26,
+            "column": 3
+          },
+          "duration": 13856,
+          "outcome": "expected",
+          "path": [
+            "tests/e2e/e2e-login.spec.ts:26",
+            "Login / Logout Flow"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "fc2c4f5862882824e89e11367206b58fecf8a0d9-80badd0e690b608f41ddb0f9f7aa5456585c9cbf",
+          "title": "Positive Scenario for login + logout",
+          "projectName": "Webkit",
+          "location": {
+            "file": "tests/e2e/e2e-login.spec.ts",
+            "line": 26,
+            "column": 3
+          },
+          "duration": 11517,
+          "outcome": "expected",
+          "path": [
+            "tests/e2e/e2e-login.spec.ts:26",
+            "Login / Logout Flow"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 6,
+        "expected": 5,
+        "unexpected": 1,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": false,
+        "duration": 91661
+      }
+    },
+    {
+      "fileId": "3040a171cef586ea6a6a606d90a40cb3b80d73eb",
+      "fileName": "tests/example.spec.ts",
+      "tests": [
+        {
+          "testId": "3040a171cef586ea6a6a606d90a40cb3b80d73eb-ad324e60573b1bac0fc3aa8c02b4c730d229bc54",
+          "title": "Screenshots",
+          "projectName": "Chromium",
+          "location": {
+            "file": "tests/example.spec.ts",
+            "line": 72,
+            "column": 3
+          },
+          "duration": 3026,
+          "outcome": "expected",
+          "path": [
+            "tests/example.spec.ts:72",
+            "Hooks"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3040a171cef586ea6a6a606d90a40cb3b80d73eb-e5728617a15508d2232fbc1a9f2441290ea1caa6",
+          "title": "Screenshots",
+          "projectName": "Firefox",
+          "location": {
+            "file": "tests/example.spec.ts",
+            "line": 72,
+            "column": 3
+          },
+          "duration": 2526,
+          "outcome": "expected",
+          "path": [
+            "tests/example.spec.ts:72",
+            "Hooks"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3040a171cef586ea6a6a606d90a40cb3b80d73eb-fdd3ed763edabe6503c809269e805b3ff2b94867",
+          "title": "Screenshots",
+          "projectName": "Webkit",
+          "location": {
+            "file": "tests/example.spec.ts",
+            "line": 72,
+            "column": 3
+          },
+          "duration": 3491,
+          "outcome": "expected",
+          "path": [
+            "tests/example.spec.ts:72",
+            "Hooks"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3040a171cef586ea6a6a606d90a40cb3b80d73eb-6c26a1581726b1915fba89eb6da79d728e92dd7f",
+          "title": "Single element Screenshot",
+          "projectName": "Chromium",
+          "location": {
+            "file": "tests/example.spec.ts",
+            "line": 79,
+            "column": 3
+          },
+          "duration": 2403,
+          "outcome": "expected",
+          "path": [
+            "tests/example.spec.ts:79",
+            "Hooks"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3040a171cef586ea6a6a606d90a40cb3b80d73eb-e692b61a2e88a6d1fb7967a26cc4014a74052192",
+          "title": "Single element Screenshot",
+          "projectName": "Firefox",
+          "location": {
+            "file": "tests/example.spec.ts",
+            "line": 79,
+            "column": 3
+          },
+          "duration": 3189,
+          "outcome": "expected",
+          "path": [
+            "tests/example.spec.ts:79",
+            "Hooks"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3040a171cef586ea6a6a606d90a40cb3b80d73eb-f1ae8f4df0af621b8b3dc31b6dab282a6363829c",
+          "title": "Single element Screenshot",
+          "projectName": "Webkit",
+          "location": {
+            "file": "tests/example.spec.ts",
+            "line": 79,
+            "column": 3
+          },
+          "duration": 3756,
+          "outcome": "expected",
+          "path": [
+            "tests/example.spec.ts:79",
+            "Hooks"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 6,
+        "expected": 6,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 18391
+      }
+    },
+    {
+      "fileId": "a4fab4b065e6422b44c565e05bd0ea3abf02c0a0",
+      "fileName": "tests/visual/visual.spec.ts",
+      "tests": [
+        {
+          "testId": "a4fab4b065e6422b44c565e05bd0ea3abf02c0a0-cf6e0953070743e4032b6796c1ed9d90fc228067",
+          "title": "Full Page Snapshot",
+          "projectName": "Chromium",
+          "location": {
+            "file": "tests/visual/visual.spec.ts",
+            "line": 4,
+            "column": 3
+          },
+          "duration": 2825,
+          "outcome": "expected",
+          "path": [
+            "tests/visual/visual.spec.ts:4",
+            "Visual Regression Testing Example"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4fab4b065e6422b44c565e05bd0ea3abf02c0a0-422481918ac574b7be8826398377846dc420c5f3",
+          "title": "Full Page Snapshot",
+          "projectName": "Firefox",
+          "location": {
+            "file": "tests/visual/visual.spec.ts",
+            "line": 4,
+            "column": 3
+          },
+          "duration": 2888,
+          "outcome": "expected",
+          "path": [
+            "tests/visual/visual.spec.ts:4",
+            "Visual Regression Testing Example"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4fab4b065e6422b44c565e05bd0ea3abf02c0a0-5277333b3e9204a2357566bd03d8dd691a9e2231",
+          "title": "Full Page Snapshot",
+          "projectName": "Webkit",
+          "location": {
+            "file": "tests/visual/visual.spec.ts",
+            "line": 4,
+            "column": 3
+          },
+          "duration": 3768,
+          "outcome": "expected",
+          "path": [
+            "tests/visual/visual.spec.ts:4",
+            "Visual Regression Testing Example"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4fab4b065e6422b44c565e05bd0ea3abf02c0a0-3ccdd32af0750b5141745590859585ab5f34072f",
+          "title": "Single Element Snapshot",
+          "projectName": "Chromium",
+          "location": {
+            "file": "tests/visual/visual.spec.ts",
+            "line": 9,
+            "column": 3
+          },
+          "duration": 2571,
+          "outcome": "expected",
+          "path": [
+            "tests/visual/visual.spec.ts:9",
+            "Visual Regression Testing Example"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4fab4b065e6422b44c565e05bd0ea3abf02c0a0-faa5dfe18b2a83505d108ef5e096201aa3224fab",
+          "title": "Single Element Snapshot",
+          "projectName": "Firefox",
+          "location": {
+            "file": "tests/visual/visual.spec.ts",
+            "line": 9,
+            "column": 3
+          },
+          "duration": 2707,
+          "outcome": "expected",
+          "path": [
+            "tests/visual/visual.spec.ts:9",
+            "Visual Regression Testing Example"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4fab4b065e6422b44c565e05bd0ea3abf02c0a0-3f3c1941419d4c18b281bce40adf26d9c00768af",
+          "title": "Single Element Snapshot",
+          "projectName": "Webkit",
+          "location": {
+            "file": "tests/visual/visual.spec.ts",
+            "line": 9,
+            "column": 3
+          },
+          "duration": 3840,
+          "outcome": "expected",
+          "path": [
+            "tests/visual/visual.spec.ts:9",
+            "Visual Regression Testing Example"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 6,
+        "expected": 6,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 18599
+      }
+    }
+  ],
+  "projectNames": [
+    "Chromium",
+    "Firefox",
+    "Webkit"
+  ],
+  "stats": {
+    "total": 18,
+    "expected": 17,
+    "unexpected": 1,
+    "flaky": 0,
+    "skipped": 0,
+    "ok": false,
+    "duration": 128651
+  }
+}
