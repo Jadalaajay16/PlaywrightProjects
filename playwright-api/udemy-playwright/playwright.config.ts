@@ -12,6 +12,7 @@ const config: PlaywrightTestConfig = {
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
     trace: 'on' //retain-on-failure will take traces only for failures
+    //adding a comment
   },
   projects: [
     {
